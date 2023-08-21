@@ -1,0 +1,3 @@
+[submodule "plugins/redmine_dmsf"]
+	path = plugins/redmine_dmsf
+	url = https://github.com/mrsadman99/redmine_dmsf.git
