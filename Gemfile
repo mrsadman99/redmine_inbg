@@ -103,7 +103,6 @@ group :test do
   gem 'simplecov', '~> 0.21.2', :require => false
   gem "ffi", platforms: [:mingw, :x64_mingw, :mswin]
   # For running system tests
-  gem 'puma', (Gem.ruby_version < Gem::Version.new('2.7') ? '< 6.0.0' : '>= 0')
   gem 'capybara', (if Gem.ruby_version < Gem::Version.new('2.6')
                      '~> 3.35.3'
                    elsif Gem.ruby_version < Gem::Version.new('2.7')
@@ -128,3 +127,5 @@ end
 Dir.glob File.expand_path("../plugins/*/{Gemfile,PluginGemfile}", __FILE__) do |file|
   eval_gemfile file
 end
+
+gem 'puma'
