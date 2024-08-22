@@ -1,3 +1,6 @@
 [submodule "plugins/redmine_dmsf"]
 	path = plugins/redmine_dmsf
 	url = https://github.com/mrsadman99/redmine_dmsf.git
+[submodule "plugins/redmine_extended_watchers"]
+	path = plugins/redmine_extended_watchers
+	url = https://github.com/mrsadman99/redmine_extended_watchers.git

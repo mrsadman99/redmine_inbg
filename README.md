@@ -12,15 +12,11 @@ More details can be found in the doc directory or on the [official website](http
 
 ### Install dependencies for redmine
 
-1. Install postgresql 10.23 via following command:
+1. Install [postgresql](https://sbp.enterprisedb.com/getfile.jsp?fileid=1259121)
 
-```cmd
-./postgress.exe --install_runtimes 0
-```
+2. Install [ruby-3.0.7.1](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.0.7-1/rubyinstaller-3.0.7-1-x64.7z)
 
-2. Install rubyinstaller+devkit 3.0
-
-3. Compile xapian-core and xapian-bindings for windows from [here](https://xapian.org/download) (from bash with unix tools):
+3. Compile xapian-core 1.4.26 and xapian-bindings 1.4.26 for windows from [here](https://xapian.org/download) (from bash with unix tools):
 
 ```bash
 cd {folder_with_packages}
@@ -36,7 +32,7 @@ make
 make install
 ```
 
-4. Install nginx
+4. Install [nginx](https://nginx.org/download/nginx-1.27.1.tar.gz)
 
 ### Setup configuration for redmine
 

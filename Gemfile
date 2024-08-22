@@ -129,3 +129,4 @@ Dir.glob File.expand_path("../plugins/*/{Gemfile,PluginGemfile}", __FILE__) do |
 end
 
 gem 'puma'
+gem 'blankslate', '~> 3.1', '>= 3.1.3'
