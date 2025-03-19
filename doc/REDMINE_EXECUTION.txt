@@ -1,0 +1,5 @@
+start without debug
+ruby bin/rails server -e production
+
+start with debug
+set "RUBY_DEBUG_OPEN=true" && set "RUBY_DEBUG_PORT=12345" && ruby bin/rails server -e development

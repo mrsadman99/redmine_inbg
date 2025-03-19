@@ -1,0 +1,48 @@
+{
+    "documentType": "word/pdf/slide/cell",
+    "token": "в payload весь конфиг без 'token'",
+    "document": {
+        "fileType": "https://api.onlyoffice.com/docs/docs-api/usage-api/config/document/#filetype",
+        "key": "https://api.onlyoffice.com/docs/docs-api/usage-api/config/document/#key",
+        "title": "https://api.onlyoffice.com/docs/docs-api/usage-api/config/document/#title",
+        "url": "https://api.onlyoffice.com/docs/docs-api/usage-api/config/document/#url",
+        "info": {
+            "owner": "https://api.onlyoffice.com/docs/docs-api/usage-api/config/document/info/#owner",
+            "uploaded": "https://api.onlyoffice.com/docs/docs-api/usage-api/config/document/info/#uploaded",
+            "sharingSettings": "информация о правах на файл в секции Access Rights https://api.onlyoffice.com/docs/docs-api/usage-api/config/document/info/#sharingsettings"
+        },
+        "permissions": {
+            "chat": false,
+            "comment": true,
+            "commentGroups": "это усложеннные правила для просмотра редактирования и удаления чужых комментариев, пока что игнорируем, в дальнейшем мб настрою (опции deleteCommentAuthorOnly и editCommentAuthorOnly в таком случае надо будет опустить) https://api.onlyoffice.com/docs/docs-api/usage-api/config/document/permissions/#commentgroups",
+            "deleteCommentAuthorOnly": true,
+            "editCommentAuthorOnly": true,
+            "edit": "доступ к редактированию https://api.onlyoffice.com/docs/docs-api/usage-api/config/document/permissions/#edit",
+            "review": false,
+            "reviewGroups": "группы ревью которых пользователь может отменить или принять для начала игнорируем, потом настроим (review: true) https://api.onlyoffice.com/docs/docs-api/usage-api/config/document/permissions/#reviewgroups",
+            "userInfoGroups": "управление видимостью отображения пользователей, которые редактируют док, состоящие в указанных группах https://api.onlyoffice.com/docs/docs-api/usage-api/config/document/permissions/#userinfogroups"
+        }
+    },
+    "editorConfig": {
+        "actionLink": "при упоминании пользователя в комментарии https://api.onlyoffice.com/docs/docs-api/usage-api/config/editor/#actionlink",
+        "callbackUrl": "Управление состоянием документом, необходимо реализовать на сервере https://api.onlyoffice.com/docs/docs-api/usage-api/config/editor/#callbackurl",
+        "coEditing": {
+            "mode": "strict"
+        },
+        "lang": "ru",
+        "mode": "режим просмотра или редактирования https://api.onlyoffice.com/docs/docs-api/usage-api/config/editor/#mode",
+        "user": {
+            "name": "https://api.onlyoffice.com/docs/docs-api/usage-api/config/editor/#username",
+            "group": "группы, к которым пользователь принадлежит (в первой итерации не нужно) https://api.onlyoffice.com/docs/docs-api/usage-api/config/editor/#usergroup",
+            "id": "https://api.onlyoffice.com/docs/docs-api/usage-api/config/editor/#userid",
+            "image": "https://api.onlyoffice.com/docs/docs-api/usage-api/config/editor/#userimage"
+        },
+        "customization": {
+            "comments": true,
+            "compactHeader": false,
+            "compactToolbar": false,
+            "plugins": false,
+            "review": "секция для настройки отображения ревью мода, первоначально не настраиваем, тк ревью мода нет https://api.onlyoffice.com/docs/docs-api/usage-api/config/editor/customization/customization-standard-branding/#review",
+        }
+    }
+}

@@ -1,0 +1,32 @@
+install postgress 14
+
+create onlyoffice database + execute script from created user for init tables(placed in /DocumentServer\server\schema\postgresql\createdb.sql )
+
+install opnlyoffice exe
+
+// for restart onlyoffice services
+net stop DsDocServiceSvc
+net start DsDocServiceSvc
+
+net stop DsConverterSvc
+net start DsConverterSvc
+
+net stop DsProxySvc
+net start DsProxySvc
+
+// config
+DocumentServer\config/local.json
+
+net stop DsDocServiceSvc
+net stop DsConverterSvc
+net stop DsProxySvc
+
+net start DsDocServiceSvc
+net start DsConverterSvc
+net start DsProxySvc
+
+Creating nginx service:
+nssm - https://stackoverflow.com/questions/40846356/run-nginx-as-windows-service
+
+Existing onlyoffice nginx config path
+C:\Program Files\ONLYOFFICE\DocumentServer\nginx
